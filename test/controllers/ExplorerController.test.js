@@ -3,8 +3,7 @@ const ExplorerController = require("./../../lib/controllers/ExplorerController")
 describe("ExplorerController", () => {
     test("getExplorersByMission node", () => {
         const ExplorersWithMission = ExplorerController.getExplorersByMission("node");
-        //expect(ExplorersWithMission.length).toBe(10);
-        expect(true).toBe(true);
+        expect(ExplorersWithMission.length).toBe(10);
     });
 
     /*test("getExplorersUsernamesByMission node", () => {
