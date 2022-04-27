@@ -6,7 +6,7 @@ describe("ExplorerController", () => {
         expect(ExplorersWithMission.length).toBe(10);
     });
 
-    /*test("getExplorersUsernamesByMission node", () => {
+    test("getExplorersUsernamesByMission node", () => {
         const UsernamesWithMission = ExplorerController.getExplorersUsernamesByMission("node");
         expect(UsernamesWithMission.length).toBe(10);
     });
@@ -25,5 +25,5 @@ describe("ExplorerController", () => {
     test("getValidationInNumber", () => {
         const validation = ExplorerController.getValidationInNumber(15);
         expect(validation).toBe("FIZZBUZZ");
-    });*/
+    });
 });
