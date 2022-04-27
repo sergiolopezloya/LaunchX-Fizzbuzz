@@ -15,4 +15,15 @@ describe("ExplorerController", () => {
         const AmountExplorersWithMission = ExplorerController.getExplorersAmonutByMission("node");
         expect(AmountExplorersWithMission).toEqual(10);
     });
+
+    test("getValidationInExplorer", () => {
+        const explorer1 = {name: "Explorer1", score: 1};
+        const validation = ExplorerController.getValidationInExplorer(explorer1);
+        expect(validation.trick).toBe(1);
+    });
+
+    test("getValidationInNumber", () => {
+        const validation = ExplorerController.getValidationInNumber(15);
+        expect(validation).toBe("FIZZBUZZ");
+    });
 });
