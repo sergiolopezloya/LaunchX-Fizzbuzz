@@ -1,12 +1,12 @@
-//const ExplorerController = require("./../../lib/controllers/ExplorerController");
+const ExplorerController = require("./../../lib/controllers/ExplorerController");
 
 describe("ExplorerController", () => {
-    /*test("getExplorersByMission node", () => {
+    test("getExplorersByMission node", () => {
         const ExplorersWithMission = ExplorerController.getExplorersByMission("node");
         expect(ExplorersWithMission.length).toBe(10);
     });
 
-    test("getExplorersUsernamesByMission node", () => {
+    /*test("getExplorersUsernamesByMission node", () => {
         const UsernamesWithMission = ExplorerController.getExplorersUsernamesByMission("node");
         expect(UsernamesWithMission.length).toBe(10);
     });
@@ -26,8 +26,4 @@ describe("ExplorerController", () => {
         const validation = ExplorerController.getValidationInNumber(15);
         expect(validation).toBe("FIZZBUZZ");
     });*/
-
-    test("dummy test", () => {
-        expect(true).toBe(true);
-    });
 });
